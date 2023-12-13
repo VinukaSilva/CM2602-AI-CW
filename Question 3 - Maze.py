@@ -3,6 +3,7 @@ import heapq
 import tkinter as tk
 from tabulate import tabulate
 
+
 class Maze:
     def __init__(self):
         self.size = 6
@@ -183,15 +184,15 @@ def print_maze_with_tabulate(maze, path=None):
     maze_map = [[' ' for _ in range(maze.size)] for _ in range(maze.size)]
 
     for barrier in maze.barriers:
-        maze_map[barrier.y][barrier.x] = 'B'
+        maze_map[barrier.y][barrier.x] = '\033[91mB\033[0m'
 
-    maze_map[maze.start.y][maze.start.x] = 'S'
-    maze_map[maze.goal.y][maze.goal.x] = 'G'
+    maze_map[maze.start.y][maze.start.x] = '\033[93mS\033[0m'
+    maze_map[maze.goal.y][maze.goal.x] = '\033[93mG\033[0m'
 
     if path:
         for node in path:
             if node != maze.start and node != maze.goal:
-                maze_map[node.y][node.x] = '*'
+                maze_map[node.y][node.x] = '\033[92m*\033[0m'
 
     # Convert the maze map to a format suitable for tabulate
     table = [[f"{cell}" for cell in row] for row in maze_map]
@@ -214,4 +215,3 @@ print_maze_with_tabulate(maze, a_star_path)
 # Visualize the same maze with DFS and A* paths
 maze.visualize_maze(dfs_visited, title="DFS Path")
 maze.visualize_maze(a_star_path, show_costs=True, title="A* Path")
-
