@@ -138,9 +138,6 @@ def run_dfs(maze):
         return None, 0
 
 
-dfs_visited = run_dfs(maze)
-
-
 def manhattan_distance(node1, node2):
     return abs(node1.x - node2.x) + abs(node1.y - node2.y)
 
@@ -156,8 +153,12 @@ def a_star_search(maze):
     f_score = {node: float('inf') for row in maze.nodes for node in row}
     f_score[start] = manhattan_distance(start, goal)
 
+    visited = set()  # Set to track visited nodes
+
     while open_set:
         current = heapq.heappop(open_set)[1]
+        visited.add(current)  # Add current node to visited set
+
         if current == goal:
             path = []
             while current in came_from:
@@ -165,19 +166,19 @@ def a_star_search(maze):
                 current = came_from[current]
             path.append(start)
             path.reverse()
-            # Count the number of nodes explored
-            nodes_explored = len(came_from) + 1  # +1 for the goal node
-            time_taken = nodes_explored  # Each node takes 1 minute
-            return path, time_taken
+            time_taken = len(visited)  # Each node takes 1 minute
+            return path, visited, time_taken
+
         for neighbor in current.neighbors:
             tentative_g_score = g_score[current] + 1
             if tentative_g_score < g_score[neighbor]:
                 came_from[neighbor] = current
                 g_score[neighbor] = tentative_g_score
                 f_score[neighbor] = tentative_g_score + manhattan_distance(neighbor, goal)
-                if neighbor not in [n[1] for n in open_set]:
+                if neighbor not in visited:
                     heapq.heappush(open_set, (f_score[neighbor], neighbor))
-    return None, 0
+
+    return None, set(), 0
 
 
 def print_maze_with_tabulate(maze, path=None):
@@ -200,16 +201,20 @@ def print_maze_with_tabulate(maze, path=None):
 
 
 dfs_visited, dfs_time_taken = run_dfs(maze)
-a_star_path, a_star_time_taken = a_star_search(maze)
+a_star_path, a_star_visited, a_star_time_taken = a_star_search(maze)
 
 print("DFS Visited Nodes:", dfs_visited)
-print("DFS Time Taken (minutes):", dfs_time_taken)
+print("DFS Time Taken :", dfs_time_taken, "minutes")
 print("\nDFS Path in Maze:")
 print_maze_with_tabulate(maze, dfs_visited)
 
-print("\nA* Path:", a_star_path)
-print("A* Time Taken (minutes):", a_star_time_taken)
-print("\nA* Path in Maze:")
+print("A* Visited Nodes:", a_star_visited)
+print("\nA* Visited Cells in Maze:")
+print_maze_with_tabulate(maze, a_star_visited)
+
+print("\nA* Final Path:", a_star_path)
+print("A* Time Taken :", a_star_time_taken, "minutes")
+print("\nA* Final Path in Maze:")
 print_maze_with_tabulate(maze, a_star_path)
 
 # Visualize the same maze with DFS and A* paths
