@@ -187,35 +187,35 @@
     <!--   *************************          Class instances            ******************************  -->
 
     <!-- Define the Structural Analysis instance -->
-    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#StructuralAnalysis">
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#StructuralAnalysis">
 
         <!-- Structural Analysis is an individual (instance) of the  Engineering Design class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
 
-    </rdf:description>
+    </rdf:Description>
 
     <!-- Define the Control Systems instance -->
-    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#ControlSystems">
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#ControlSystems">
 
         <!-- Control Systems is an individual (instance) of the  Engineering Design class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
 
-    </rdf:description>
+    </rdf:Description>
 
     <!-- Define the Power Electronics instance -->
-    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#PowerElectronics">
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#PowerElectronics">
 
         <!-- Power Electronics is an individual (instance) of the  Engineering Design class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
 
-    </rdf:description>
+    </rdf:Description>
 
     <!-- Define the Heat Exchanges instance -->
-    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#HeatExchanges">
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#HeatExchanges">
 
         <!-- Heat Exchanges is an individual (instance) of the  Engineering Design class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
 
-    </rdf:description>
+    </rdf:Description>
     
 </rdf:RDF>
