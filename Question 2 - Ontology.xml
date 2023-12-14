@@ -83,4 +83,109 @@
         <rdfs:label>Electricity</rdfs:label>
         <rdfs:comment>Electricity is the study of electric charge and its behavior</rdfs:comment>
     </owl:Class>
+
+    <!-- OWL Subclass Definition - Engineering Design -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Engineering Design">
+        <!-- Engineering Design is a subclassification of Design -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#Design"/>
+        <rdfs:label>Engineering Design</rdfs:label>
+        <rdfs:comment>A systematic and creative process to develop solutions to problems</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Subclass Definition - Simulation Tools -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#SimulationTools">
+        <!-- Simulation Tools is a subclassification of Design -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#Design"/>
+        <rdfs:label>Simulation Tools</rdfs:label>
+        <rdfs:comment>Computer programs designed to replicate and mimic the behavior of real-world systems</rdfs:comment>
+    </owl:Class>
+
+    <!--   *************************  Class instances and their relationships   ******************************  -->
+
+    <!-- Define the Mechanics class instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Mechanics">
+        <!-- Mechanics is an individual (instance) of the Mechanical Engineering class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <!-- Mechanics hasDesign ______ -->
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#StructuralAnalysis"/>
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <!-- Mechanics useSimulationTool ______ -->
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#FiniteElementAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#CircuitSimulation"/>
+        <!-- Mechanics undergoesResearch ______ -->
+        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#FrictionStirWelding"/>
+        <!-- Mechanics undergoesQualityControl ______ -->
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#StrengthandDurability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#Efficiency"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#ElectromagneticCompatability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#VibrationLevels"/>
+    </rdf:Description>
+
+    <!-- Define the Dynamics class instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Dynamics">
+        <!-- Dynamics is an individual (instance) of the Mechanical Engineering class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <!-- Dynamics hasDesign ______ -->
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <!-- Dynamics useSimulationTool ______ -->
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#FiniteElementAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#VibrationAnalysis"/>
+        <!-- Dynamics undergoesResearch ______ -->
+        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#MEMS"/>
+        <!-- Dynamics undergoesQualityControl ______ -->
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#StrengthandDurability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#ResponseTime"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#VibrationLevels"/>
+    </rdf:Description>
+
+    <!-- Define the MaterialScience class instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#MaterialScience">
+        <!-- MaterialScience is an individual (instance) of the Mechanical Engineering class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <!-- MaterialScience hasDesign ______ -->
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#StructuralAnalysis"/>
+        <!-- MaterialScience useSimulationTool ______ -->
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#HeatTransformAnalysis"/>
+        <!-- MaterialScience undergoesResearch ______ -->
+        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#Composites"/>
+        <!-- MaterialScience undergoesQualityControl ______ -->
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#StrengthandDurability"/>
+    </rdf:Description>
+
+    <!-- Define the Thermodynamics class instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Thermodynamics">
+        <!-- Thermodynamics is an individual (instance) of the Mechanical Engineering class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <!-- Thermodynamics hasDesign ______ -->
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <!-- Thermodynamics useSimulationTool ______ -->
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#HeatTransformAnalysis"/>
+        <!-- Thermodynamics undergoesResearch ______ -->
+        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#MEMS"/>
+        <!-- Thermodynamics undergoesQualityControl ______ -->
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#Efficiency"/>
+    </rdf:Description>
+
+    <!-- Define the Electricity class instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Electricity">
+        <!-- Electricity is an individual (instance) of the Mechanical Engineering class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <!-- Electricity hasDesign ______ -->
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#PowerElectronics"/>
+        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#HeatExchanges"/>
+        <!-- Electricity useSimulationTool ______ -->
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#VibrationAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#CircuitSimulation"/>
+        <!-- Electricity undergoesResearch ______ -->
+        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#QCIP"/>
+        <!-- Electricity undergoesQualityControl ______ -->
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#Efficiency"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#ResponseTime"/>
+    </rdf:Description>
+
+    <!--   *************************          Class instances            ******************************  -->
+
+    
+    
 </rdf:RDF>
