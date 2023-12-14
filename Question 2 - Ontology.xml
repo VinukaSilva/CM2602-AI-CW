@@ -43,4 +43,44 @@
         <rdfs:label>Quality Control</rdfs:label>
         <rdfs:comment>Quality Control messures in mechanical engineering</rdfs:comment>
     </owl:Class>
+
+    <!-- OWL Subclass Definition - Mechanics -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Mechanics">
+        <!-- Mechanics is a subclassification of Mechanical Engineering -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <rdfs:label>Mechanics</rdfs:label>
+        <rdfs:comment>Mechanics is the study of motion of objects and the forces acting on them</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Subclass Definition - Dynamics -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Dynamics">
+        <!-- Dynamics is a subclassification of Mechanical Engineering -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <rdfs:label>Dynamics</rdfs:label>
+        <rdfs:comment>Dynamics is the study of understanding the forces and motion of objects</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Subclass Definition - Material Science -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#MaterialScience">
+        <!-- Material Science is a subclassification of Mechanical Engineering -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <rdfs:label>Material Science</rdfs:label>
+        <rdfs:comment>Material science is the study of the properties, structure, performance of materials</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Subclass Definition - Thermodynamics -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Thermodynamics">
+        <!-- Thermodynamics is a subclassification of Mechanical Engineering -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <rdfs:label>Thermodynamics</rdfs:label>
+        <rdfs:comment>Thermodynamics is the study of energy and its transformations</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Subclass Definition - Electricity -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Electricity">
+        <!-- Electricity is a subclassification of Mechanical Engineering -->
+        <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+        <rdfs:label>Electricity</rdfs:label>
+        <rdfs:comment>Electricity is the study of electric charge and its behavior</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
