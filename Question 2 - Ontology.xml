@@ -182,10 +182,12 @@
         <!-- Electricity undergoesQualityControl ______ -->
         <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
         <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability"/>
     </rdf:Description>
 
     <!--   *************************          Class instances            ******************************  -->
 
+    <!-- Engineering Design -->
     <!-- Define the Structural Analysis instance -->
     <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#StructuralAnalysis">
 
@@ -215,6 +217,113 @@
 
         <!-- Heat Exchanges is an individual (instance) of the  Engineering Design class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
+
+    </rdf:Description>
+
+    <!-- Simulation Tools -->
+    <!-- Define the Finite Element Analysis instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis">
+
+        <!-- Finite Element Analysis is an individual (instance) of the  Simulation Tools class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#SimulationTools"/>
+
+    </rdf:Description>
+
+    <!-- Define the Vibration Analysis instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#VibrationAnalysis">
+
+        <!-- Vibration Analysis is an individual (instance) of the  Simulation Tools class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#SimulationTools"/>
+
+    </rdf:Description>
+
+    <!-- Define the Heat Transform Analysis instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis">
+
+        <!-- Heat Transform Analysis is an individual (instance) of the  Simulation Tools class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#SimulationTools"/>
+
+    </rdf:Description>
+
+    <!-- Define the Circuit Simulation instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#CircuitSimulation">
+
+        <!-- Circuit Simulation is an individual (instance) of the  Simulation Tools class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#SimulationTools"/>
+
+    </rdf:Description>
+
+    <!-- Researches -->
+    <!-- Define the MEMS instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#CircuitSimulation">
+
+        <!-- MEMS is an individual (instance) of the  Researches class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
+
+    </rdf:Description>
+
+    <!-- Define the Composites instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Composites">
+
+        <!-- Composites is an individual (instance) of the  Researches class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
+
+    </rdf:Description>
+
+    <!-- Define the QCIP instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#QCIP">
+
+        <!-- QCIP is an individual (instance) of the  Researches class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
+
+    </rdf:Description>
+
+    <!-- Define the Friction Stir Welding instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#FrictionStirWelding">
+
+        <!-- Friction Stir Welding is an individual (instance) of the  Researches class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
+
+    </rdf:Description>
+
+    <!-- Quality Control -->
+    <!-- Define the Strength and Durability instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#StrengthandDurability">
+
+        <!-- Strength and Durability is an individual (instance) of the  Quality Control class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#QualityControl"/>
+
+    </rdf:Description>
+
+    <!-- Define the Response Time instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#ResponseTime">
+
+        <!-- Response Time is an individual (instance) of the  Quality Control class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#QualityControl"/>
+
+    </rdf:Description>
+
+    <!-- Define the Efficiency instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Efficiency">
+
+        <!-- Efficiency is an individual (instance) of the  Quality Control class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#QualityControl"/>
+
+    </rdf:Description>
+
+    <!-- Define the Vibration Levels instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#VibrationLevels">
+
+        <!-- Vibration Levels is an individual (instance) of the  Quality Control class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#QualityControl"/>
+
+    </rdf:Description>
+
+    <!-- Define the Electromagnetic Compatability instance -->
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability">
+
+        <!-- Electromagnetic Compatability is an individual (instance) of the  Quality Control class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#QualityControl"/>
 
     </rdf:Description>
     
