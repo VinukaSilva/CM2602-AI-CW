@@ -1,0 +1,46 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:Engineering="http://www.cwvinuka.com/Engineering">
+
+    <!-- OWL Header Example -->
+    <owl:Ontology rdf:about="http://www.cwvinuka.com/Engineering">
+        <dc:title> Example Engineering Ontology</dc:title>
+        <dc:description>An Mechanical Engineering specialised ontology </dc:description>
+    </owl:Ontology>
+
+    <!-- Define the hasDesign property -->
+    <owl:ObjectProperty rdf:about="http://www.cwvinuka.com/Engineering#hasDesign"/>
+    <!-- Define the useSimulationTool property -->
+    <owl:ObjectProperty rdf:about="http://www.cwvinuka.com/Engineering#useSimulationTool"/>
+    <!-- Define the undergoesResearch property -->
+    <owl:ObjectProperty rdf:about="http://www.cwvinuka.com/Engineering#undergoesResearch"/>
+    <!-- Define the undergoesQualityControl property -->
+    <owl:ObjectProperty rdf:about="http://www.cwvinuka.com/Engineering#undergoesQualityControl"/>
+
+    <!-- OWL Class Definition - Mechanical Engineering -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#MechanicalEngineering">
+        <rdfs:label>Mechanical Engineering</rdfs:label>
+        <rdfs:comment>Mechanical Engineering fields</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Class Definition - Design -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Design">
+        <rdfs:label>Design</rdfs:label>
+        <rdfs:comment>Design Patterns of engineering</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Class Definition - Researches -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Researches">
+        <rdfs:label>Researches</rdfs:label>
+        <rdfs:comment>Researches carried out in mechanical engineering</rdfs:comment>
+    </owl:Class>
+
+    <!-- OWL Class Definition - Quality Control -->
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#QualityControl">
+        <rdfs:label>Quality Control</rdfs:label>
+        <rdfs:comment>Quality Control messures in mechanical engineering</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
