@@ -85,7 +85,7 @@
     </owl:Class>
 
     <!-- OWL Subclass Definition - Engineering Design -->
-    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Engineering Design">
+    <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#EngineeringDesign">
         <!-- Engineering Design is a subclassification of Design -->
         <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#Design"/>
         <rdfs:label>Engineering Design</rdfs:label>
@@ -187,10 +187,34 @@
     <!--   *************************          Class instances            ******************************  -->
 
     <!-- Define the Structural Analysis instance -->
-    <rdf:description rdf:about="http://www.example.com/Virus#wind">
+    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#StructuralAnalysis">
 
-        <!-- Wind is an individual (instance) of the Infection Posibility class -->
-        <rdf:type rdf:resource="http://www.example.com/Virus#infectionPosibilities"/>
+        <!-- Structural Analysis is an individual (instance) of the  Engineering Design class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
+
+    </rdf:description>
+
+    <!-- Define the Control Systems instance -->
+    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#ControlSystems">
+
+        <!-- Control Systems is an individual (instance) of the  Engineering Design class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
+
+    </rdf:description>
+
+    <!-- Define the Power Electronics instance -->
+    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#PowerElectronics">
+
+        <!-- Power Electronics is an individual (instance) of the  Engineering Design class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
+
+    </rdf:description>
+
+    <!-- Define the Heat Exchanges instance -->
+    <rdf:description rdf:about="http://www.cwvinuka.com/Engineering#HeatExchanges">
+
+        <!-- Heat Exchanges is an individual (instance) of the  Engineering Design class -->
+        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#EngineeringDesign"/>
 
     </rdf:description>
     
