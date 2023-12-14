@@ -44,44 +44,137 @@
         <rdfs:comment>Quality Control messures in mechanical engineering</rdfs:comment>
     </owl:Class>
 
+    <!--   *************************    Sub Classes and their relationships    ******************************  -->
+
     <!-- OWL Subclass Definition - Mechanics -->
     <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Mechanics">
+
         <!-- Mechanics is a subclassification of Mechanical Engineering -->
         <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+
         <rdfs:label>Mechanics</rdfs:label>
         <rdfs:comment>Mechanics is the study of motion of objects and the forces acting on them</rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <!-- Mechanics hasDesign ______ -->
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#StructuralAnalysis"/>         
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>  
+                <!-- Mechanics useSimulationTool ______ -->    
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis"/>      
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#CircuitSimulation"/> 
+                <!-- Mechanics undergoesResearch ______ -->  
+                <owl:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#FrictionStirWelding"/> 
+                <!-- Mechanics undergoesQualityControl ______ -->   
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>   
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability"/>  
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#VibrationLevels"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
     </owl:Class>
 
     <!-- OWL Subclass Definition - Dynamics -->
     <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Dynamics">
+
         <!-- Dynamics is a subclassification of Mechanical Engineering -->
         <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+
         <rdfs:label>Dynamics</rdfs:label>
         <rdfs:comment>Dynamics is the study of understanding the forces and motion of objects</rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <!-- Dynamics hasDesign ______ -->
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
+                <!-- Dynamics useSimulationTool ______ -->
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis"/>
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#VibrationAnalysis"/>
+                <!-- Dynamics undergoesResearch ______ -->
+                <owl:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#MEMS"/>
+                <!-- Dynamics undergoesQualityControl ______ -->
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#VibrationLevels"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
     </owl:Class>
 
     <!-- OWL Subclass Definition - Material Science -->
     <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#MaterialScience">
+
         <!-- Material Science is a subclassification of Mechanical Engineering -->
         <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+
         <rdfs:label>Material Science</rdfs:label>
         <rdfs:comment>Material science is the study of the properties, structure, performance of materials</rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <!-- MaterialScience hasDesign ______ -->
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#StructuralAnalysis"/>
+                <!-- MaterialScience useSimulationTool ______ -->
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis"/>
+                <!-- MaterialScience undergoesResearch ______ -->
+                <owl:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#Composites"/>
+                <!-- MaterialScience undergoesQualityControl ______ -->
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
     <!-- OWL Subclass Definition - Thermodynamics -->
     <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Thermodynamics">
+
         <!-- Thermodynamics is a subclassification of Mechanical Engineering -->
         <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+
         <rdfs:label>Thermodynamics</rdfs:label>
         <rdfs:comment>Thermodynamics is the study of energy and its transformations</rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <!-- Thermodynamics hasDesign ______ -->
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
+                <!-- Thermodynamics useSimulationTool ______ -->
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis"/>
+                <!-- Thermodynamics undergoesResearch ______ -->
+                <owl:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#MEMS"/>
+                <!-- Thermodynamics undergoesQualityControl ______ -->
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
     </owl:Class>
 
     <!-- OWL Subclass Definition - Electricity -->
     <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#Electricity">
+
         <!-- Electricity is a subclassification of Mechanical Engineering -->
         <rdfs:subClassOf rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
+
         <rdfs:label>Electricity</rdfs:label>
         <rdfs:comment>Electricity is the study of electric charge and its behavior</rdfs:comment>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <!-- Electricity hasDesign ______ -->
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#PowerElectronics"/>
+                <owl:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#HeatExchanges"/>
+                <!-- Electricity useSimulationTool ______ -->
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#VibrationAnalysis"/>
+                <owl:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#CircuitSimulation"/>
+                <!-- Electricity undergoesResearch ______ -->
+                <owl:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#QCIP"/>
+                <!-- Electricity undergoesQualityControl ______ -->
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
+                <owl:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
     </owl:Class>
 
     <!-- OWL Subclass Definition - Engineering Design -->
@@ -100,90 +193,6 @@
         <rdfs:comment>Computer programs designed to replicate and mimic the behavior of real-world systems</rdfs:comment>
     </owl:Class>
 
-    <!--   *************************  Class instances and their relationships   ******************************  -->
-
-    <!-- Define the Mechanics class instance -->
-    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Mechanics">
-        <!-- Mechanics is an individual (instance) of the Mechanical Engineering class -->
-        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
-        <!-- Mechanics hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#StructuralAnalysis"/>
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
-        <!-- Mechanics useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis"/>
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#CircuitSimulation"/>
-        <!-- Mechanics undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#FrictionStirWelding"/>
-        <!-- Mechanics undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#VibrationLevels"/>
-    </rdf:Description>
-
-    <!-- Define the Dynamics class instance -->
-    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Dynamics">
-        <!-- Dynamics is an individual (instance) of the Mechanical Engineering class -->
-        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
-        <!-- Dynamics hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
-        <!-- Dynamics useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis"/>
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#VibrationAnalysis"/>
-        <!-- Dynamics undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#MEMS"/>
-        <!-- Dynamics undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#VibrationLevels"/>
-    </rdf:Description>
-
-    <!-- Define the MaterialScience class instance -->
-    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#MaterialScience">
-        <!-- MaterialScience is an individual (instance) of the Mechanical Engineering class -->
-        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
-        <!-- MaterialScience hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#StructuralAnalysis"/>
-        <!-- MaterialScience useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis"/>
-        <!-- MaterialScience undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#Composites"/>
-        <!-- MaterialScience undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
-    </rdf:Description>
-
-    <!-- Define the Thermodynamics class instance -->
-    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Thermodynamics">
-        <!-- Thermodynamics is an individual (instance) of the Mechanical Engineering class -->
-        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
-        <!-- Thermodynamics hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
-        <!-- Thermodynamics useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis"/>
-        <!-- Thermodynamics undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#MEMS"/>
-        <!-- Thermodynamics undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
-    </rdf:Description>
-
-    <!-- Define the Electricity class instance -->
-    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#Electricity">
-        <!-- Electricity is an individual (instance) of the Mechanical Engineering class -->
-        <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
-        <!-- Electricity hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#PowerElectronics"/>
-        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#HeatExchanges"/>
-        <!-- Electricity useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#VibrationAnalysis"/>
-        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#CircuitSimulation"/>
-        <!-- Electricity undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#QCIP"/>
-        <!-- Electricity undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability"/>
-    </rdf:Description>
 
     <!--   *************************          Class instances            ******************************  -->
 
