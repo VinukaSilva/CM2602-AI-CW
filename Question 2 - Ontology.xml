@@ -107,18 +107,18 @@
         <!-- Mechanics is an individual (instance) of the Mechanical Engineering class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
         <!-- Mechanics hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#StructuralAnalysis"/>
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#StructuralAnalysis"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
         <!-- Mechanics useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#FiniteElementAnalysis"/>
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#CircuitSimulation"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#CircuitSimulation"/>
         <!-- Mechanics undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#FrictionStirWelding"/>
+        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#FrictionStirWelding"/>
         <!-- Mechanics undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#StrengthandDurability"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#Efficiency"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#ElectromagneticCompatability"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#VibrationLevels"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ElectromagneticCompatability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#VibrationLevels"/>
     </rdf:Description>
 
     <!-- Define the Dynamics class instance -->
@@ -126,16 +126,16 @@
         <!-- Dynamics is an individual (instance) of the Mechanical Engineering class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
         <!-- Dynamics hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
         <!-- Dynamics useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#FiniteElementAnalysis"/>
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#VibrationAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#FiniteElementAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#VibrationAnalysis"/>
         <!-- Dynamics undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#MEMS"/>
+        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#MEMS"/>
         <!-- Dynamics undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#StrengthandDurability"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#ResponseTime"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#VibrationLevels"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#VibrationLevels"/>
     </rdf:Description>
 
     <!-- Define the MaterialScience class instance -->
@@ -143,13 +143,13 @@
         <!-- MaterialScience is an individual (instance) of the Mechanical Engineering class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
         <!-- MaterialScience hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#StructuralAnalysis"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#StructuralAnalysis"/>
         <!-- MaterialScience useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#HeatTransformAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis"/>
         <!-- MaterialScience undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#Composites"/>
+        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#Composites"/>
         <!-- MaterialScience undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#StrengthandDurability"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#StrengthandDurability"/>
     </rdf:Description>
 
     <!-- Define the Thermodynamics class instance -->
@@ -157,13 +157,13 @@
         <!-- Thermodynamics is an individual (instance) of the Mechanical Engineering class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
         <!-- Thermodynamics hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
         <!-- Thermodynamics useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#HeatTransformAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#HeatTransformAnalysis"/>
         <!-- Thermodynamics undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#MEMS"/>
+        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#MEMS"/>
         <!-- Thermodynamics undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#Efficiency"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
     </rdf:Description>
 
     <!-- Define the Electricity class instance -->
@@ -171,21 +171,27 @@
         <!-- Electricity is an individual (instance) of the Mechanical Engineering class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#MechanicalEngineering"/>
         <!-- Electricity hasDesign ______ -->
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#ControlSystems"/>
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#PowerElectronics"/>
-        <Engineering:hasDesign rdf:resource="http://www.example.com/Engineering#HeatExchanges"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#ControlSystems"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#PowerElectronics"/>
+        <Engineering:hasDesign rdf:resource="http://www.cwvinuka.com/Engineering#HeatExchanges"/>
         <!-- Electricity useSimulationTool ______ -->
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#VibrationAnalysis"/>
-        <Engineering:useSimulationTool rdf:resource="http://www.example.com/Engineering#CircuitSimulation"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#VibrationAnalysis"/>
+        <Engineering:useSimulationTool rdf:resource="http://www.cwvinuka.com/Engineering#CircuitSimulation"/>
         <!-- Electricity undergoesResearch ______ -->
-        <Engineering:undergoesResearch rdf:resource="http://www.example.com/Engineering#QCIP"/>
+        <Engineering:undergoesResearch rdf:resource="http://www.cwvinuka.com/Engineering#QCIP"/>
         <!-- Electricity undergoesQualityControl ______ -->
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#Efficiency"/>
-        <Engineering:undergoesQualityControl rdf:resource="http://www.example.com/Engineering#ResponseTime"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#Efficiency"/>
+        <Engineering:undergoesQualityControl rdf:resource="http://www.cwvinuka.com/Engineering#ResponseTime"/>
     </rdf:Description>
 
     <!--   *************************          Class instances            ******************************  -->
 
-    
+    <!-- Define the Structural Analysis instance -->
+    <rdf:description rdf:about="http://www.example.com/Virus#wind">
+
+        <!-- Wind is an individual (instance) of the Infection Posibility class -->
+        <rdf:type rdf:resource="http://www.example.com/Virus#infectionPosibilities"/>
+
+    </rdf:description>
     
 </rdf:RDF>
