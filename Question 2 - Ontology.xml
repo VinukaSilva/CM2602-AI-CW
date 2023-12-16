@@ -20,6 +20,11 @@
     <!-- Define the undergoesQualityControl property -->
     <owl:ObjectProperty rdf:about="http://www.cwvinuka.com/Engineering#undergoesQualityControl"/>
 
+    <!-- Define the undergoneYear property -->
+    <owl:DatatypeProperty rdf:about="http://www.cwvinuka.com/Engineering#undergoneYear"/>
+    <!-- Define the Country property -->
+    <owl:DatatypeProperty rdf:about="http://www.cwvinuka.com/Engineering#country"/>
+
     <!-- OWL Class Definition - Mechanical Engineering -->
     <owl:Class rdf:about="http://www.cwvinuka.com/Engineering#MechanicalEngineering">
         <rdfs:label>Mechanical Engineering</rdfs:label>
@@ -54,7 +59,7 @@
 
         <rdfs:label>Mechanics</rdfs:label>
         <rdfs:comment>Mechanics is the study of motion of objects and the forces acting on them</rdfs:comment>
-
+        
         <rdfs:subClassOf>
             <owl:Restriction>
                 <!-- Mechanics hasDesign ______ -->
@@ -264,10 +269,14 @@
 
     <!-- Researches -->
     <!-- Define the MEMS instance -->
-    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#CircuitSimulation">
+    <rdf:Description rdf:about="http://www.cwvinuka.com/Engineering#MEMS">
 
         <!-- MEMS is an individual (instance) of the  Researches class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
+
+        <!-- Datatype Properties -->
+        <Engineering:undergoneYear>2017</Engineering:undergoneYear>
+        <Engineering:country>USA -California</Engineering:country>
 
     </rdf:Description>
 
@@ -277,6 +286,10 @@
         <!-- Composites is an individual (instance) of the  Researches class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
 
+        <!-- Datatype Properties -->
+        <Engineering:undergoneYear>2023</Engineering:undergoneYear>
+        <Engineering:country>China</Engineering:country>
+
     </rdf:Description>
 
     <!-- Define the QCIP instance -->
@@ -285,6 +298,10 @@
         <!-- QCIP is an individual (instance) of the  Researches class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
 
+        <!-- Datatype Properties -->
+        <Engineering:undergoneYear>2021</Engineering:undergoneYear>
+        <Engineering:country>Canada</Engineering:country>
+
     </rdf:Description>
 
     <!-- Define the Friction Stir Welding instance -->
@@ -292,6 +309,10 @@
 
         <!-- Friction Stir Welding is an individual (instance) of the  Researches class -->
         <rdf:type rdf:resource="http://www.cwvinuka.com/Engineering#Researches"/>
+
+        <!-- Datatype Properties -->
+        <Engineering:undergoneYear >2015</Engineering:undergoneYear>
+        <Engineering:country>Malaysia</Engineering:country>
 
     </rdf:Description>
 
