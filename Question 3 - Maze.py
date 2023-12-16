@@ -105,12 +105,15 @@ def initialize_maze(maze):
         for x in range(maze.size):
             node = maze.nodes[y][x]
             # Add neighbors (horizontal, vertical, diagonal)
+            temp_neighbors = []
             for dy in range(-1, 2):
                 for dx in range(-1, 2):
                     if 0 <= x + dx < maze.size and 0 <= y + dy < maze.size and (dx != 0 or dy != 0):
                         neighbor = maze.nodes[y + dy][x + dx]
                         if neighbor not in maze.barriers:
-                            node.neighbors.append(neighbor)
+                            temp_neighbors.append(neighbor)
+            # Sort neighbors in increasing order based on their (x, y) values
+            node.neighbors = sorted(temp_neighbors, key=lambda n: (n.x, n.y))
 
 
 maze = Maze()
