@@ -183,6 +183,35 @@ def a_star_search(maze):
 
     return None, set(), 0
 
+# Function to calculate the mean and variance of time taken and path length
+def calculate_mean_variance(data):
+    mean = sum(data) / len(data)
+    variance = sum([(x - mean) ** 2 for x in data]) / len(data)
+    return mean, variance
+
+# Running the algorithms multiple times and collecting data
+num_iterations = 100
+dfs_times = []
+dfs_path_lengths = []
+a_star_times = []
+a_star_path_lengths = []
+
+for _ in range(num_iterations):
+    maze = Maze()
+    initialize_maze(maze)
+
+    # DFS
+    dfs_path, dfs_time = run_dfs(maze)
+    if dfs_path:
+        dfs_times.append(dfs_time)
+        dfs_path_lengths.append(len(dfs_path))
+
+    # A*
+    a_star_path, _, a_star_time = a_star_search(maze)
+    if a_star_path:
+        a_star_times.append(a_star_time)
+        a_star_path_lengths.append(len(a_star_path))
+
 
 def print_maze_with_tabulate(maze, path=None):
     maze_map = [[' ' for _ in range(maze.size)] for _ in range(maze.size)]
@@ -223,3 +252,25 @@ print_maze_with_tabulate(maze, a_star_path)
 # Visualize the same maze with DFS and A* paths
 maze.visualize_maze(dfs_visited, title="DFS Path")
 maze.visualize_maze(a_star_path, show_costs=True, title="A* Path")
+
+# Calculate mean and variance for DFS
+dfs_time_mean, dfs_time_variance = calculate_mean_variance(dfs_times)
+dfs_path_length_mean, dfs_path_length_variance = calculate_mean_variance(dfs_path_lengths)
+
+# Calculate mean and variance for A*
+a_star_time_mean, a_star_time_variance = calculate_mean_variance(a_star_times)
+a_star_path_length_mean, a_star_path_length_variance = calculate_mean_variance(a_star_path_lengths)
+
+print("************************************************")
+print("DFS Algorithm")
+print("Mean solution time = ", dfs_time_mean)
+print("Variance of solution time = ", dfs_time_variance)
+print("Mean path length = ", dfs_path_length_mean )
+print("Variance of path length = " , dfs_path_length_variance)
+
+print("================================================")
+print("A* Algorithm")
+print("Mean solution time = ", a_star_time_mean)
+print("Variance of solution time = ",  a_star_time_variance)
+print("Mean path length = ", a_star_path_length_mean )
+print("Variance of path length = " , a_star_path_length_variance)
